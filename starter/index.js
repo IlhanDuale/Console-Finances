@@ -125,7 +125,7 @@ console.log("Average Change: " + averageChange);
 
 // * The greatest increase in Profit/Losses (date and amount) over the entire period.
 
-var change = []
+var change = [];
 for (let i = 0; i < finances.length - 1; i++) {
     var change = finances[i + 1] - finances[i];
     changes.push(change);
