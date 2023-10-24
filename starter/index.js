@@ -112,21 +112,26 @@ console.log(totalProfitLosses);
 //   * You will need to track what the total change in Profit/Losses are from month to month and then find the average.
 //   * (`Total/(Number of months - 1)`)
 
-// Assuming 'finances' is your array of data
 var totalChange = 0;
 for (let i = 1; i < finances.length; i++) {
-    // Calculate the change by subtracting the previous month's value from the current month's value
+
     totalChange += finances[i][1] - finances[i - 1][1];
 }
 
-// Calculate the average change
+// Average change
 var averageChange = totalChange / (finances.length - 1);
 
 console.log("Average Change: " + averageChange);
 
-
-
 // * The greatest increase in Profit/Losses (date and amount) over the entire period.
+
+var change = []
+for (let i = 0; i < finances.length - 1; i++) {
+    var change = finances[i + 1] - finances[i];
+    changes.push(change);
+}
+
+console.log(changes);
 
 // * The greatest decrease in Profit/Losses (date and amount) over the entire period.
 
