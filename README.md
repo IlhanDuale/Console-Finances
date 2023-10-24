@@ -1,10 +1,5 @@
 # Console-Finances
 
-#   Console-Finances
-
-# Portfolio
-
-
 Links to an external site.
 
 # Description
